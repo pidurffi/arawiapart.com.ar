@@ -1,0 +1,13 @@
+				<div itemscope="" itemtype="http://schema.org/ImageGallery" class="picture">
+					<div class="row">
+						{% for galeria in galerias %}
+						{% for gal in galeria.galeria %}
+						<figure itemprop="associatedMedia" itemscope="" itemType="http://schema.org/ImageObject" class="col-sm-4">
+							<a href="{{ asset('/uploads/galerias/gallery/') }}{{ gal }}" itemprop="contentUrl1" data-size="800x600" data-index="0" class="thumb">
+								<img src="{{ asset('/uploads/galerias/') }}{{ gal|gallery_thumb(360,240) }}" itemprop="thumbnail">
+							</a>
+						</figure>
+						{% endfor %}
+						{% endfor %}
+					</div>
+				</div>

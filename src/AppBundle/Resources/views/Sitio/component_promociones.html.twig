@@ -1,0 +1,24 @@
+
+
+	<section id="promociones"> 
+	    <div class="container"> 
+	        <header class="section-header"> 
+	            <h3>Promociones</h3> 
+	            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> --> 
+	        </header>    
+
+	        <div class="row about-cols"> 
+				{% for promocion in promociones %}
+	            <div class="col-md-3 wow fadeInUp"> 
+	                <div class="about-col"> 
+	                    <div class="img"> 
+	                        <img src="{{ asset('/uploads/promociones/' ~ promocion.imagen) }}" alt="Arawi Apart - Las Gaviotas, Mar de las Pampas" class="img-fluid">           
+	                    </div>                                 
+	                    <h2 class="title"><a href="#">{{ promocion.nombre }}</a></h2> 
+	                    <p>{{ promocion.descripcion|nl2br}}</p> 
+	                </div>                             
+	            </div>   
+	         	{% endfor %}
+	        </div>                     
+	    </div>                 
+	</section>

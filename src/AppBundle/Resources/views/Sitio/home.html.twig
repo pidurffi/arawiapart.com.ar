@@ -1,0 +1,266 @@
+{% extends "AppBundle::Sitio/layout.html.twig" %}
+{% block content %}
+
+<main id="main">
+	<!--PROMOCIONES Section-->     
+
+	{{ render(controller('AppBundle:Default:promociones')) }}
+	
+	<!-- #PROMOCIONES --> 
+
+
+	<!--==========================
+    LOS APARTS Section
+    ============================-->
+    <section id="aparts"  class="section-bg" >
+      	<div class="container">
+
+	        <header class="section-header">
+	          <h3 class="section-title">Los Aparts</h3>
+	        </header>
+
+        
+        	<div class="row portfolio-container">
+              <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+                <div class="portfolio-wrap">
+                    <figure>
+                    <a href="/interna.html"><img src="{{ asset('bundles/app/maquetado/img/los-aparts/suite-2-personas.jpg') }}" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
+                    </figure>
+                    <div class="portfolio-info">
+                        <h4><a href="#">Suite doble</a></h4>
+                        <p>Para 2 personas y un bebé</p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+                    <div class="portfolio-wrap">
+                        <figure>
+                        <a href="/interna.html"><img src="{{ asset('bundles/app/maquetado/img/los-aparts/suite-parrilla.jpg') }}" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
+                        </figure>
+                        <div class="portfolio-info">
+                            <h4><a href="#">Suite doble con parrilla</a></h4>
+                            <p>Para 2 personas y un bebé</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+                    <div class="portfolio-wrap">
+                        <figure>
+                        <a href="/interna.html"><img src="{{ asset('bundles/app/maquetado/img/los-aparts/apart-4-personas.jpg') }}" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
+                        </figure>
+                        <div class="portfolio-info">
+                            <h4><a href="#">Apart 2 ambientes</a></h4>
+                            <p>Hasta 4 personas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+                    <div class="portfolio-wrap">
+                        <figure>
+                        <a href="/interna.html"><img src="img/los-aparts/suite-2-personas-01.jpg" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
+                        </figure>
+                        <div class="portfolio-info">
+                            <h4><a href="#">Apart 3 ambientes</a></h4>
+                            <p>Hasta 6 personas</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+                    <div class="portfolio-wrap">
+                        <figure>
+                        <a href="/interna.html"><img src="{{ asset('bundles/app/maquetado/img/los-aparts/duplex-6-personas.jpg') }}" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
+                        </figure>
+                        <div class="portfolio-info">
+                            <h4><a href="#">Dúplex 3 ambientes</a></h4>
+                            <p>Hasta 6 personas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+                    <div class="portfolio-wrap">
+                        <figure>
+                        <a href="/interna.html"><img src="{{ asset('bundles/app/maquetado/img/los-aparts/duplex-7-personas.jpg') }}" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
+                        </figure>
+                        <div class="portfolio-info">
+                            <h4><a href="#">Dúplex 3 ambientes</a></h4>
+                            <p>Hasta 7 personas</p>
+                        </div>
+                    </div>
+                </div>
+        	</div>         
+    	</div>
+	</section>
+    <!-- #los aparts -->
+
+
+    <!--==========================
+        Services Section
+        ============================-->             
+            <section id="servicios"> 
+                <div class="container"> 
+                    <header class="section-header wow fadeInUp"> 
+                        <h3>Servicios</h3> 
+                        <p>Nuestros aparts y departamentos cuentan con servicios y equipamiento para hacer que su estadía sea más confortable y agradable.
+                        <br>Arawi Aparts - Las Gaviotas, Mar de las Pampas</p> 
+                    </header>                     
+                    <div class="row"> 
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Servicio de mucama</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>                         
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Ropa blanca</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>                      
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Piscina descubierta</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>                          
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Solarium sobre deck de madera</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>                          
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Parque con juegos infantiles</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>                          
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">WIFI Fibra Óptica</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>  
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Videoteca (variedad de películas a elección)</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>    
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Practicuna, silla para comer y bañera para bebé</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>           
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Sillones para llevar a la playa (2 por apart)</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>   
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Espacio para estacionar, semicubierto y descubierto</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>
+                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>                             
+                            <h4 class="title"><a href="">Smart TV 43" en aparts y dúplex</a></h4> 
+                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                        </div>                  
+                    </div>                     
+                </div>                 
+            </section>
+               
+
+
+            <!--Google map-->
+            <section id="ubicacion" class="section-bg wow fadeInUp">
+                
+                    <div id="mapa" class="container-fluid mt-5 mb-5">
+                        <header class="section-header wow fadeInUp">
+                            <h3>Ubicación</h3>
+                        </header>
+                    </div>
+                    <div id="map-container" class="z-depth-1" style="height: 500px"></div>
+                
+            </section>
+
+            <section id="contact" class="section-bg wow fadeInUp"> 
+                <div class="container"> 
+                    <div class="section-header"> 
+                        <h3>Contacto</h3> 
+                        <p>Ahora también podés contactarnos por WhasApp</p> 
+                    </div>                     
+                    <div class="row contact-info"> 
+                        <div class="col-md-4"> 
+                            <div class="contact-address"> 
+                                <i class="ion-ios-location-outline"></i> 
+                                <h3>Dirección</h3> 
+                                <address>Punta del Este esquina Almirante Brown</address> 
+                            </div>                             
+                        </div>                         
+                        <div class="col-md-4"> 
+                            <div class="contact-phone"> 
+                                <i class="ion-ios-telephone-outline"></i> 
+                                <h3>Teléfono</h3> 
+                                <p>Reservas: <a href="tel:11 54140776">11 5414-0776</a></p> 
+                            </div>                             
+                        </div>                         
+                        <div class="col-md-4"> 
+                            <div class="contact-email"> 
+                                <i class="ion-ios-email-outline"></i> 
+                                <h3>Email</h3> 
+                                <p><a href="mailto:info@arawiapart.com.ar">info@arawiapart.com.ar</a></p> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                    <div class="form"> 
+                        <div id="sendmessage">Su consulta ha sido enviada. Gracias!</div>                         
+                        <div id="errormessage"></div>                         
+                        <form action="" method="post" role="form" class="contactForm"> 
+                            <div class="form-row"> 
+                                <div class="form-group col-md-6"> 
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres"/> 
+                                    <div class="validation"></div>                                     
+                                </div>                                 
+                                <div class="form-group col-md-6"> 
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor ingrese un email válido"/> 
+                                    <div class="validation"></div>                                     
+                                </div>                                 
+                            </div>                             
+                                                         
+                            <div class="form-group"> 
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba un mensaje" placeholder="Mensaje"></textarea>                                 
+                                <div class="validation"></div>                                 
+                            </div>                             
+                            <div class="text-center">
+                                <button type="submit">Enviar Mensaje</button>
+                            </div>                             
+                        </form>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <!-- #contact --> 
+
+	
+</main>	
+{% endblock %}
