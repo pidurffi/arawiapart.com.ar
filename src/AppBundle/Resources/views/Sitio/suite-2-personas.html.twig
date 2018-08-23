@@ -1,0 +1,61 @@
+{% extends "AppBundle::Sitio/layout.html.twig" %}
+{% set interna = true %}
+
+{% block content %}
+
+<section id="ficha" class="wow fadeInUp">
+            <div class="container">
+                <header class="section-header"> 
+                    <h3>Habitación Doble</h3>
+                </header>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ficha-carousel owl-carousel owl-theme">
+
+							{{ render(controller('AppBundle:Default:galeria',{galeria_id: 2})) }}
+
+							
+
+
+                            
+                        </div>
+                        <div class="ficha-destacado">
+                            <ul class="lista-destacada">
+                                <li><i class="fas fa-home"></i> 1 ambiente</li>
+                                <li><i class="fas fa-user"></i> Dos personas y un bebé</li>
+                            </ul>
+                            <ul>
+                                <li>Sommier King</li>
+                                <li>TV por cable</li>
+                                <li>Frigobar</li>
+                                <li>Pava eléctrica</li>
+                                <li>Baño completo</li>
+                                <li>Espacio para estacionar descubierto</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="text-left">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                        <ul class="main-list">
+                            <li><i class="fas fa-check-circle"></i> Heladera</li>
+                            <li><i class="fas fa-check-circle"></i> Microondas</li>
+                            <li><i class="fas fa-check-circle"></i> Extractor de aire</li>
+                            <li><i class="fas fa-check-circle"></i> Cocina eléctrica</li>
+                            <li><i class="fas fa-check-circle"></i> Vajilla y batería de cocina</li>
+                            <li><i class="fas fa-check-circle"></i> TV por cable (dos por apart)</li>
+                            <li><i class="fas fa-check-circle"></i> DVD</li>
+                            <li><i class="fas fa-check-circle"></i> Teléfono</li>
+                            <li><i class="fas fa-check-circle"></i> Caja de seguridad</li>
+                            <li><i class="fas fa-check-circle"></i> Ventiladores de techo</li>
+                            <li><i class="fas fa-check-circle"></i> Calefacción central por radiadores</li>
+                            <li><i class="fas fa-check-circle"></i> Parrillas individuales con mesa y sillas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+{% endblock %}

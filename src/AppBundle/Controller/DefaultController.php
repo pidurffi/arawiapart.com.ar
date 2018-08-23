@@ -44,8 +44,8 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/cabanas-2-personas-superior", name="cabanas-2-personas-superior")
-     * @Template("AppBundle:Sitio:2-personas-superior.html.twig")
+     * @Route("/suite-2-personas", name="suite-2-personas")
+     * @Template("AppBundle:Sitio:suite-2-personas.html.twig")
      */
     public function dosPersonasSuperiorAction(Request $request)
     {

@@ -1,6 +1,61 @@
 {% extends "AppBundle::Sitio/layout.html.twig" %}
 {% block content %}
 
+
+
+
+<!--==========================
+    Intro Section
+    ============================-->         
+    <section id="intro"> 
+        <div class="intro-container"> 
+            <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel"> 
+                <ol class="carousel-indicators"></ol>                     
+                <div class="carousel-inner" role="listbox"> 
+                    <div class="carousel-item active"> 
+                        <div class="carousel-background">
+                            <img src="{{ asset('bundles/app/maquetado/img/intro-carousel/001.jpg') }}" alt="">
+                        </div>                             
+                        <div class="carousel-container"> 
+                            <div class="carousel-content"> 
+                                <h2>Arawi Apart - Las Gaviotas Mar de las Pampas</h2> 
+                                <p>Alquiler de departamentos y aparts con servicios. </p> 
+                                <!-- <a href="#featured-services" class="btn-get-started scrollto">Get Started</a> --> 
+                            </div>                                 
+                        </div>                             
+                    </div>                         
+                    <div class="carousel-item"> 
+                        <div class="carousel-background">
+                            <img src="{{ asset('bundles/app/maquetado/img/intro-carousel/002.jpg') }}" alt="">
+                        </div>                             
+                        <div class="carousel-container"> 
+                            <div class="carousel-content"> 
+                                <h2>ACEPTAMOS MASCOTAS !!!</h2> 
+                                <p>En Arawi sabemos que son parte de tu familia<br>Alojate con tu mascota, somos Pet Friendly !!!!</p> 
+                                <!-- <a href="#featured-services" class="btn-get-started scrollto">Get Started</a> --> 
+                            </div>                                 
+                        </div>                             
+                    </div>                         
+                    <div class="carousel-item"> 
+                        <div class="carousel-background">
+                            <img src="{{ asset('bundles/app/maquetado/img/intro-carousel/003.jpg') }}" alt="">
+                        </div>                             
+                        <div class="carousel-container"> 
+                            <div class="carousel-content"> 
+                                <h2>Piscina y solarium</h2> 
+                                <!-- <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p> 
+                                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a> --> 
+                            </div>                                 
+                        </div>                             
+                    </div>                                                 
+                </div>                     
+                <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">  <span class="carousel-control-prev-icon fas fa-angle-left" aria-hidden="true"></span>  <span class="sr-only">Previous</span></a>
+                <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">  <span class="carousel-control-next-icon fas fa-angle-right" aria-hidden="true"></span>  <span class="sr-only">Next</span></a>
+            </div>                 
+        </div>             
+    </section>
+    <!-- #intro --> 
+
 <main id="main">
 	<!--PROMOCIONES Section-->     
 
@@ -24,7 +79,7 @@
               <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
                 <div class="portfolio-wrap">
                     <figure>
-                    <a href="/interna.html"><img src="{{ asset('bundles/app/maquetado/img/los-aparts/suite-2-personas.jpg') }}" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
+                    <a href="{{ url('suite-2-personas') }}"><img src="{{ asset('bundles/app/maquetado/img/los-aparts/suite-2-personas.jpg') }}" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
                     </figure>
                     <div class="portfolio-info">
                         <h4><a href="#">Suite doble</a></h4>
