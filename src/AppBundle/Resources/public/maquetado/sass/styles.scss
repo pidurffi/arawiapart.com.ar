@@ -92,20 +92,18 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
-#header.header-scrolled {
-	background: rgba(0, 0, 0, 0.9);
-	padding: 20px 0;
-	height: 72px;
-	top:0;
-	transition: all 0.5s;
+#header {
+	&.header-scrolled {
+		background: rgba(0, 0, 0, 0.9);
+		padding: 20px 0;
+		height: 72px;
+		top:0;
+		transition: all 0.5s;
+	}
+	&.interna {
+		background: rgba(0, 0, 0, 0.9);
+	}
 }
-
-#top-menu {
-
-
-}
-
-
 
 #intro {
 	display: table;
@@ -1426,7 +1424,7 @@ body.mobile-nav-active {
 				}
 			}
 		}
-		@media (min-width: 768) {
+		@media (min-width: 768px) {
 			margin-bottom: 0;
 			ul {
 				column-count: 2;
