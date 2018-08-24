@@ -109,8 +109,9 @@ class DefaultController extends Controller
     	$fuente_datos = $request->request;
     	$nombre = $fuente_datos->get('nombre','');
     	$email = $fuente_datos->get('email','');
+        $telefono = $fuente_datos->get('telefono','');
     	$mensaje = $fuente_datos->get('mensaje','');
-    	$fecha_ingreso = $fuente_datos->get('fecha_ingreso','');
+    	/*$fecha_ingreso = $fuente_datos->get('fecha_ingreso','');
     	$fecha_salida = $fuente_datos->get('fecha_salida','');
     	$cantidad_adultos = $fuente_datos->get('cantidad_adultos','');
     	$cantidad_ninos = $fuente_datos->get('cantidad_ninos','');
@@ -123,18 +124,18 @@ class DefaultController extends Controller
     	} catch(\Excepcion $ex) {
     	}
     	if(!$fiDate) $fiDate = NULL;
-    	if(!$fsDate) $fsDate = NULL;
+    	if(!$fsDate) $fsDate = NULL;*/
     
     	$contacto = new Contacto();
     	$contacto->setNombre($nombre);
     	$contacto->setEmail($email);
-    	//$contacto->setTelefono($telefono);
+    	$contacto->setTelefono($telefono);
     	$contacto->setMensaje($mensaje);
-    	$contacto->setFecha(new \DateTime());
+    	/*$contacto->setFecha(new \DateTime());
     	$contacto->setFechaIngreso($fiDate);
     	$contacto->setFechaSalida($fsDate);
     	$contacto->setCantidadAdultos($cantidad_adultos);
-    	$contacto->setCantidadNinos($cantidad_ninos);
+    	$contacto->setCantidadNinos($cantidad_ninos);*/
     	$this->getDoctrine()->getManager()->persist($contacto);
     	$this->getDoctrine()->getManager()->flush();
     
@@ -146,13 +147,13 @@ class DefaultController extends Controller
     		$body = $this->renderView('AppBundle:Sitio:email_contacto.html.twig',
     				array(
     						'nombre' => $nombre,
-    						//'telefono' => $telefono,
+    						'telefono' => $telefono,
     						'email' => $email,
     						'mensaje' => $mensaje,
-    						'fecha_ingreso' => $fiDate,
+    						/*'fecha_ingreso' => $fiDate,
     						'fecha_salida' => $fsDate,
     						'cantidad_adultos' => $cantidad_adultos,
-    						'cantidad_ninos' => $cantidad_ninos
+    						'cantidad_ninos' => $cantidad_ninos*/
     				));
 
     		$email_reply_to = $email;

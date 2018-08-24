@@ -42,25 +42,6 @@ class Contacto
 	 */
 	private $fecha;
 	
-	/**
-	 * @ORM\Column(type="datetime", nullable=true)
-	 */
-	private $fecha_ingreso;
-	
-	/**
-	 * @ORM\Column(type="datetime", nullable=true)
-	 */
-	private $fecha_salida;
-	
-	/**
-	 * @ORM\Column(type="integer", nullable=true)
-	 */
-	private $cantidad_adultos;
-	
-	/**
-	 * @ORM\Column(type="integer", nullable=true)
-	 */
-	private $cantidad_ninos;
 	
 
     /**
@@ -145,53 +126,7 @@ class Contacto
         return $this->telefono;
     }
     
-    /**
-     * Set cantidad_adultos
-     *
-     * @param string $cantidad
-     *
-     * @return Contacto
-     */
-    public function setCantidadAdultos($cantidad)
-    {
-        $this->cantidad_adultos = $cantidad;
-
-        return $this;
-    }
-
-    /**
-     * Get cantidad_adultos
-     *
-     * @return string
-     */
-    public function getCantidadAdultos()
-    {
-        return $this->cantidad_adultos;
-    }
-    
-    /**
-     * Set cantidad_ninos
-     *
-     * @param string $cantidad
-     *
-     * @return Contacto
-     */
-    public function setCantidadNinos($cantidad)
-    {
-        $this->cantidad_ninos = $cantidad;
-
-        return $this;
-    }
-
-    /**
-     * Get cantidad_ninos
-     *
-     * @return string
-     */
-    public function getCantidadNinos()
-    {
-        return $this->cantidad_ninos;
-    }
+   
     
     /**
      * Set fecha
@@ -217,53 +152,7 @@ class Contacto
         return $this->fecha;
     }
     
-    /**
-     * Set fecha_ingreso
-     *
-     * @param string $fecha_ingreso
-     *
-     * @return Contacto
-     */
-    public function setFechaIngreso($fecha_ingreso)
-    {
-        $this->fecha_ingreso = $fecha_ingreso;
-
-        return $this;
-    }
-
-    /**
-     * Get fecha_ingreso
-     *
-     * @return \DateTime
-     */
-    public function getFechaIngreso()
-    {
-        return $this->fecha_ingreso;
-    }
-    
-    /**
-     * Set fecha_salida
-     *
-     * @param string $fecha_salida
-     *
-     * @return Contacto
-     */
-    public function setFechaSalida($fecha_salida)
-    {
-        $this->fecha_salida = $fecha_salida;
-
-        return $this;
-    }
-
-    /**
-     * Get fecha_salida
-     *
-     * @return \DateTime
-     */
-    public function getFechaSalida()
-    {
-        return $this->fecha_salida;
-    }
+   
 
     /**
      * Set mensaje

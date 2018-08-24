@@ -298,28 +298,39 @@ Intro Section
                     <div class="form"> 
                         <div id="sendmessage">Su consulta ha sido enviada. Gracias!</div>                         
                         <div id="errormessage"></div>                         
-                        <form action="" method="post" role="form" class="contactForm"> 
+                        <form method="post" role="form" class="contactForm" id="form_contacto" onsubmit="return validar_form();"> 
                             <div class="form-row"> 
                                 <div class="form-group col-md-4"> 
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres"/> 
+                                    <input type="text" name="name" class="form-control" id="form_nombre" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres"/> 
                                     <div class="validation"></div>                                     
                                 </div>                                 
                                 <div class="form-group col-md-4"> 
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor ingrese un email válido"/> 
+                                    <input type="email" class="form-control" name="email" id="form_email" placeholder="Email" data-rule="email" data-msg="Por favor ingrese un email válido"/> 
                                     <div class="validation"></div>                                     
                                 </div> 
                                 <div class="form-group col-md-4"> 
-                                    <input type="telefono" class="form-control" name="telefono" id="telefono" placeholder="Teléfono" data-rule="telefono" data-msg="Por favor ingrese su número de teléfono"/> 
+                                    <input type="telefono" class="form-control" name="telefono" id="form_telefono" placeholder="Teléfono" data-rule="telefono" data-msg="Por favor ingrese su número de teléfono"/> 
                                     <div class="validation"></div>                                     
                                 </div>                                 
                             </div>                             
                                                          
                             <div class="form-group"> 
-                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba un mensaje" placeholder="Mensaje"></textarea>                                 
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba un mensaje" id="form_mensaje" placeholder="Mensaje"></textarea>                                 
                                 <div class="validation"></div>                                 
                             </div>                             
                             <div class="text-center">
+                                {#
+
                                 <button type="submit">Enviar Mensaje</button>
+                                #}
+                                <a href="" class="send">Enviar Mensaje</a>
+                                <div class="spinner" id="form_img_loading">
+                                    <div class="rect1"></div>
+                                    <div class="rect2"></div>
+                                    <div class="rect3"></div>
+                                    <div class="rect4"></div>
+                                    <div class="rect5"></div>
+                                </div>
                             </div>                             
                         </form>                         
                     </div>                     
