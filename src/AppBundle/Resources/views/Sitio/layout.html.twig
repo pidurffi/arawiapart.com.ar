@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% set interna = false %}
 <html lang="en">
 	<head>
 		<!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -71,7 +70,7 @@
         </div>     
     </section>
 
-    <header id="header"{% if interna == true %} class="interna" {% endif %}> 
+    <header id="header"{% if interna is defined and interna == true %} class="interna" {% endif %}> 
         <!-- <div class="container-fluid"> --> 
         <div class="container sticky-top">
             <div id="logo" class="pull-left">                   
