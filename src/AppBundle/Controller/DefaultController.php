@@ -47,14 +47,14 @@ class DefaultController extends Controller
      * @Route("/suite-2-personas", name="suite-2-personas")
      * @Template("AppBundle:Sitio:suite-2-personas.html.twig")
      */
-    public function dosPersonasSuperiorAction(Request $request)
+    public function suite2PersonasAction(Request $request)
     {
     	return array();
     }
     
     /**
-     * @Route("/cabanas-2-personas-classic", name="cabanas-2-personas-classic")
-     * @Template("AppBundle:Sitio:2-personas-classic.html.twig")
+     * @Route("/suite-2-personas-con-parrilla", name="suite-2-personas-con-parrilla")
+     * @Template("AppBundle:Sitio:suite-2-personas-con-parrilla.html.twig")
      */
     public function dosPersonasClassicAction(Request $request)
     {
@@ -62,58 +62,42 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/cabanas-2-personas-premium", name="cabanas-2-personas-premium")
-     * @Template("AppBundle:Sitio:2-personas-premium.html.twig")
+     * @Route("/apart-4-personas", name="apart-4-personas")
+     * @Template("AppBundle:Sitio:apart-4-personas.html.twig")
      */
-    public function dosPersonasPremiumAction(Request $request)
+    public function apart4PersonasAction(Request $request)
     {
     	return array();
     }
     
     /**
-     * @Route("/cabanas-3-5-personas-exclusivas", name="cabanas-3-5-personas-exclusivas")
-     * @Template("AppBundle:Sitio:3-5-personas-exclusivas.html.twig")
+     * @Route("/apart-6-personas", name="apart-6-personas")
+     * @Template("AppBundle:Sitio:apart-6-personas.html.twig")
      */
-    public function tresPersonasExclusivasAction(Request $request)
+    public function apart6PersonasAction(Request $request)
     {
     	return array();
     }
     
     /**
-     * @Route("/cabanas-3-5-personas-el-puente", name="cabanas-3-5-personas-el-puente")
-     * @Template("AppBundle:Sitio:3-5-personas-el-puente.html.twig")
+     * @Route("/duplex-6-personas", name="duplex-6-personas")
+     * @Template("AppBundle:Sitio:duplex-6-personas.html.twig")
      */
-    public function tresPersonasElPuenteAction(Request $request)
+    public function duplex6PersonasAction(Request $request)
     {
     	return array();
     }
     
     /**
-     * @Route("/cabanas-3-5-personas-piedra-azul", name="cabanas-3-5-personas-piedra-azul")
-     * @Template("AppBundle:Sitio:3-5-personas-piedra-azul.html.twig")
+     * @Route("/duplex-7-personas", name="duplex-7-personas")
+     * @Template("AppBundle:Sitio:duplex-7-personas.html.twig")
      */
-    public function tresPersonasPiedraAzulAction(Request $request)
+    public function duplex7PersonasAction(Request $request)
     {
     	return array();
     }
     
-    /**
-     * @Route("/cabanas-6-7-personas-cortaderas", name="cabanas-6-7-personas-cortaderas")
-     * @Template("AppBundle:Sitio:6-7-personas-cortaderas.html.twig")
-     */
-    public function seisPersonasCortaderasAction(Request $request)
-    {
-    	return array();
-    }
     
-    /**
-     * @Route("/cabanas-6-7-personas-mares", name="cabanas-6-7-personas-mares")
-     * @Template("AppBundle:Sitio:6-7-personas-mares.html.twig")
-     */
-    public function seisPersonasMaresAction(Request $request)
-    {
-    	return array();
-    }
     
     
     /**
