@@ -1,0 +1,17 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: arawiapa_2017
+    database_user: arawiapa_2017
+    database_password: ogmFdXiXz0Ud
+    mailer_transport: smtp
+    mailer_host: mail.arawiapart.com.ar
+    mailer_user: webmaster+arawiapart.com.ar
+    mailer_password: ZzqS&bQfbX9y
+    mailer_port: 26
+    secret: 681ec15606bf7b3b838c03ff3b86031b39cbeb7c
+    asunto_contacto: Contacto de _nombre_ desde www.arawiapart.com.ar
+    contacto_from: webmaster@arawiapart.com.ar
+    contacto_to: info@arawiapart.com.ar
+    
