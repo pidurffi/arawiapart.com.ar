@@ -79,22 +79,23 @@
             <nav id="nav-menu-container"> 
                 <ul class="nav-menu"> 
                     <li class="menu-active">
-                        <a href="#inicio">Inicio</a>
+                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#inicio"{% else %} href="{{ path('homepage') }}#inicio"{% endif %}>Inicio</a>
+                        
                     </li>                         
                     <li>
-                        <a href="#promociones">Promociones</a>
+                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#promociones"{% else %} href="{{ path('homepage') }}#promociones"{% endif %}>Promociones</a>
                     </li>   
                     <li>
-                        <a href="#aparts">Los Aparts</a>
+                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#aparts"{% else %} href="{{ path('homepage') }}#aparts"{% endif %}>Los Aparts</a>
                     </li>                      
                     <li>
-                        <a href="#servicios">Servicios</a>
+                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#servicios"{% else %} href="{{ path('homepage') }}#servicios"{% endif %}>Servicios</a>
                     </li>
                     <li>
-                        <a href="#ubicacion">Ubicación</a>
+                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#ubicacion"{% else %} href="{{ path('homepage') }}#ubicacion"{% endif %}>Ubicación</a>
                     </li>                        
                     <li>
-                        <a href="#contact">Contacto</a>
+                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#contact"{% else %} href="{{ path('homepage') }}#contact"{% endif %}>Contacto</a>
                     </li>                         
                 </ul>                     
             </nav>

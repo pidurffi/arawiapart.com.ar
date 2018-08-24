@@ -10,15 +10,14 @@
                 </header>
                 <div class="row">
                     <div class="col-lg-6">
+
+                        <!-- Carousel de fotos-->
                         <div class="ficha-carousel owl-carousel owl-theme">
 
 							{{ render(controller('AppBundle:Default:galeria',{galeria_id: 2})) }}
-
-							
-
-
                             
                         </div>
+                        
                         <div class="ficha-destacado">
                             <ul class="lista-destacada">
                                 <li><i class="fas fa-home"></i> 1 ambiente</li>
@@ -54,8 +53,4 @@
                 </div>
             </div>
         </section>
-
-
-
-
 {% endblock %}
