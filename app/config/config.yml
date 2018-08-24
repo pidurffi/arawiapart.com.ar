@@ -77,7 +77,7 @@ fos_user:
     user_class: AppBundle\Entity\User    
     
 easy_admin:
-    site_name: 'Luces del Bosque'
+    site_name: 'Arawi Apart'
     entities:
       Contacto:
         class: AppBundle\Entity\Contacto
