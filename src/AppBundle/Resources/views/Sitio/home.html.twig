@@ -169,39 +169,20 @@ Intro Section
                 <h3>El complejo</h3> 
                 {# <p>Nuestros aparts y departamentos cuentan con servicios y equipamiento para hacer que su estadía sea más confortable y agradable.
                 <br>Arawi Aparts - Las Gaviotas, Mar de las Pampas</p> #} 
-            </header>     
-            <div class="row text-center text-lg-left">
+            </header>   
 
-
-                {% for gal in galeria.galeria %}
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <a href="{{ asset('/uploads/galerias/gallery/') }}{{ gal }}" class="d-block mb-4 h-100">
-                            <img src="{{ asset('/uploads/galerias/') }}{{ gal|gallery_thumb(300,225) }}" class="img-fluid img-thumbnail">
-                        </a>
-                    </div>
-                {% endfor %}
-
-            </div>
-
-            <div class="container mt-5 mb-5" id="galeria">
-            <div class="title-wrapper">
-                <h2>Galería de Fotos</h2>
-            </div>
-
-            <div class="fotos">
-                <div class="my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery" data-pswp-uid="1">
-                    <div class="row">
-                        {% for gal in galeria.galeria %}
-                        <figure class="col-sm-4 text-center" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-                            <a href="{{ asset('/uploads/galerias/gallery/') }}{{ gal }}" itemprop="contentUrl" data-size="800x600">
-                                <img src="{{ asset('/uploads/galerias/') }}{{ gal|gallery_thumb(300,225) }}" itemprop="thumbnail" alt="Image description">
+            <div class="my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery" data-pswp-uid="1"> 
+                <div class="row text-center text-lg-left">
+                    {% for gal in galeria.galeria %}
+                        <figure class="col-lg-3 col-md-4 col-xs-6">
+                            <a href="{{ asset('/uploads/galerias/gallery/') }}{{ gal }}" class="d-block mb-4 h-100" itemprop="contentUrl" data-size="800x600">
+                                <img itemprop="thumbnail" src="{{ asset('/uploads/galerias/') }}{{ gal|gallery_thumb(300,225) }}" class="img-fluid img-thumbnail">
                             </a>
                         </figure>
-                        {% endfor %}
-                    </div>
+                    {% endfor %}
+
                 </div>
             </div>
-        </div>
         </div>
     </section>
 

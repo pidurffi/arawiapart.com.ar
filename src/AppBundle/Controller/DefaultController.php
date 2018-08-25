@@ -26,7 +26,7 @@ class DefaultController extends Controller
      */
     public function promocionesAction(Request $request) {
     
-    	$promociones = $this->getDoctrine()->getRepository('AppBundle:Promocion')->find4Site(3);
+    	$promociones = $this->getDoctrine()->getRepository('AppBundle:Promocion')->find4Site(4);
     	return array('promociones'=>$promociones);
     	
     }
