@@ -160,98 +160,145 @@ Intro Section
 	</section>
     <!-- #los aparts -->
 
+    <!--==========================
+    El Complejo Section
+    ============================--> 
+    <section id="el-complejo" class="wow fadeIn">
+        <div class="container"> 
+            <header class="section-header wow fadeInUp"> 
+                <h3>El complejo</h3> 
+                {# <p>Nuestros aparts y departamentos cuentan con servicios y equipamiento para hacer que su estadía sea más confortable y agradable.
+                <br>Arawi Aparts - Las Gaviotas, Mar de las Pampas</p> #} 
+            </header>     
+            <div class="row text-center text-lg-left">
+
+
+                {% for gal in galeria.galeria %}
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <a href="{{ asset('/uploads/galerias/gallery/') }}{{ gal }}" class="d-block mb-4 h-100">
+                            <img src="{{ asset('/uploads/galerias/') }}{{ gal|gallery_thumb(300,225) }}" class="img-fluid img-thumbnail">
+                        </a>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+            <div class="container mt-5 mb-5" id="galeria">
+            <div class="title-wrapper">
+                <h2>Galería de Fotos</h2>
+            </div>
+
+            <div class="fotos">
+                <div class="my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery" data-pswp-uid="1">
+                    <div class="row">
+                        {% for gal in galeria.galeria %}
+                        <figure class="col-sm-4 text-center" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                            <a href="{{ asset('/uploads/galerias/gallery/') }}{{ gal }}" itemprop="contentUrl" data-size="800x600">
+                                <img src="{{ asset('/uploads/galerias/') }}{{ gal|gallery_thumb(300,225) }}" itemprop="thumbnail" alt="Image description">
+                            </a>
+                        </figure>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- #El Complejo -->
+
 
     <!--==========================
-        Services Section
-        ============================-->             
-            <section id="servicios"> 
-                <div class="container"> 
-                    <header class="section-header wow fadeInUp"> 
-                        <h3>Servicios</h3> 
-                        <p>Nuestros aparts y departamentos cuentan con servicios y equipamiento para hacer que su estadía sea más confortable y agradable.
-                        <br>Arawi Aparts - Las Gaviotas, Mar de las Pampas</p> 
-                    </header>                     
-                    <div class="row"> 
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Servicio de mucama</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>                         
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Ropa blanca</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>                      
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Piscina descubierta</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>                          
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Solarium sobre deck de madera</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>                          
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Parque con juegos infantiles</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>                          
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">WIFI Fibra Óptica</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>  
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Videoteca (variedad de películas a elección)</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>    
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Practicuna, silla para comer y bañera para bebé</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>           
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Sillones para llevar a la playa (2 por apart)</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>   
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Espacio para estacionar, semicubierto y descubierto</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
-                            <div class="icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>                             
-                            <h4 class="title"><a href="">Smart TV 43" en aparts y dúplex</a></h4> 
-                            <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
-                        </div>                  
-                    </div>                     
-                </div>                 
-            </section>
+    Services Section
+    ============================-->             
+    <section id="servicios">
+        <div class="container"> 
+            <header class="section-header wow fadeInUp"> 
+                <h3>Servicios</h3> 
+                <p>Nuestros aparts y departamentos cuentan con servicios y equipamiento para hacer que su estadía sea más confortable y agradable.
+                <br>Arawi Aparts - Las Gaviotas, Mar de las Pampas</p> 
+            </header>                     
+            <div class="row"> 
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Servicio de mucama</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>                         
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Ropa blanca</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>                      
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Piscina descubierta</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>                          
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Solarium sobre deck de madera</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>                          
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Parque con juegos infantiles</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>                          
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">WIFI Fibra Óptica</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>  
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Videoteca (variedad de películas a elección)</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>    
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Practicuna, silla para comer y bañera para bebé</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>           
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Sillones para llevar a la playa (2 por apart)</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>   
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Espacio para estacionar, semicubierto y descubierto</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"> 
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>                             
+                    <h4 class="title"><a href="">Smart TV 43" en aparts y dúplex</a></h4> 
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --> 
+                </div>                  
+            </div>                     
+        </div>                 
+    </section>
                
 
 
