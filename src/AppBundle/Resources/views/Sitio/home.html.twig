@@ -1,5 +1,6 @@
 {% extends "AppBundle::Sitio/layout.html.twig" %}
 {% block content %}
+
 <!--==========================
 Intro Section
 ============================-->         
@@ -60,7 +61,7 @@ Intro Section
 	<!-- #PROMOCIONES --> 
 
     <!--==========================
-      Call To Action Section
+      WhatsApp Section
     ============================-->
     <section id="call-to-action" class="wow fadeIn">
       <div class="text-center">
@@ -69,7 +70,7 @@ Intro Section
         <a href="https://wa.me/5491154140776" target="_blank"><i class="fab fa-whatsapp fa-10x"></i></a>
       </div>
     </section>
-    <!-- #call-to-action -->
+    <!-- #WhatsApp -->
 
 	<!--==========================
     LOS APARTS Section
@@ -80,7 +81,7 @@ Intro Section
 	        <header class="section-header">
 	          <h3 class="section-title">Los Aparts</h3>
 	        </header>
-
+            <p>Todas las unidades cuentan con una hermosa vista abierta a espacios verdes, soleados y muy luminosos.</p>
         
         	<div class="row portfolio-container">
               <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
@@ -119,17 +120,17 @@ Intro Section
                     </div>
                 </div>
 
-                <!-- <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
+                <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
                     <div class="portfolio-wrap">
                         <figure>
-                        <a href="/interna.html"><img src="img/los-aparts/suite-2-personas-01.jpg" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
+                        <a href="{{ path('apart-6-personas') }}"><img src="{{ asset('bundles/app/maquetado/img/los-aparts/apart-6-personas.jpg') }}" class="img-fluid" alt="Suite doble - Arawi Apart - Las Gaviotas, Mar de las Pampas"></a>
                         </figure>
                         <div class="portfolio-info">
-                            <h4><a href="#">Apart 3 ambientes</a></h4>
+                            <h4><a href="{{ path('apart-6-personas') }}">Apart 3 ambientes</a></h4>
                             <p>Hasta 6 personas</p>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp">
                     <div class="portfolio-wrap">
