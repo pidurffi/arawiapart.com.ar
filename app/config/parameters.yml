@@ -13,6 +13,6 @@ parameters:
     secret: 681ec15606bf7b3b838c03ff3b86031b39cbeb7c
     asunto_contacto: Contacto de _nombre_ desde www.arawiapart.com.ar
     contacto_from: webmaster@arawiapart.com.ar
- #   contacto_to: info@arawiapart.com.ar
-    contacto_to: gabryel@gmail.com
+    contacto_to: info@arawiapart.com.ar
+    #contacto_to: gabryel@gmail.com
     
