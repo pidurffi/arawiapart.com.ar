@@ -1,0 +1,65 @@
+{% extends "AppBundle::Sitio/layout.html.twig" %}
+{% set interna = true %}
+
+{% block content %}
+
+<section id="ficha" class="wow fadeInUp">
+            <div class="container">
+                <header class="section-header"> 
+                    <h3>Apart Premium 4 personas</h3>
+                </header>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <!-- Carousel de fotos-->
+                        <div class="ficha-carousel owl-carousel owl-theme">
+
+							{{ render(controller('AppBundle:Default:galeria',{galeria_id: 9})) }}
+                            
+                        </div>
+                        
+                        <div class="ficha-destacado">
+                            <ul class="lista-destacada">
+                                <li><i class="fas fa-home"></i> 2 ambientes</li>
+                                <li><i class="fas fa-user"></i> 4 personas y un bebé</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="text-left">Apart de 2 ambientes, cocina completa, 2 baños con parrilla interior</p>
+
+                        <ul class="main-list">
+                            <li><i class="fas fa-check-circle"></i> Amplio living comedor con un diván cama con carrito</li>
+                            <li><i class="fas fa-check-circle"></i> Dormitorio matrimonial con Sommier King y baño en suite</li>
+                            <li><i class="fas fa-check-circle"></i> Cocina totalmente equipada</li>
+                            <li><i class="fas fa-check-circle"></i> Baño completo</li>
+                            <li><i class="fas fa-check-circle"></i> Amplio balcón terraza con muebles de jardín, reposeras y sombrilla</li>
+                            <li><i class="fas fa-check-circle"></i> Parrilla interior</li>
+                            <li><i class="fas fa-check-circle"></i> Espacio para estacionar semicubierto</li>
+                        </ul>
+
+                        <header class="section-header"> 
+                            <h4>Equipamiento</h4>
+                        </header>
+                        <ul class="main-list">
+                            <li><i class="fas fa-check-circle"></i> Heladera</li>
+                            <li><i class="fas fa-check-circle"></i> Microondas</li>
+                            <li><i class="fas fa-check-circle"></i> Cocina con horno</li>
+                            <li><i class="fas fa-check-circle"></i> Pava eléctrica</li>
+                            <li><i class="fas fa-check-circle"></i> Cafetera eléctrica</li>
+                            <li><i class="fas fa-check-circle"></i> Vajilla y batería de cocina</li>
+                            <li><i class="fas fa-check-circle"></i> Extractor de aire</li>  
+                            <li><i class="fas fa-check-circle"></i> Secador de pelo</li>
+                            <li><i class="fas fa-check-circle"></i> TV por cable (dos por apart)</li>
+                            <li><i class="fas fa-check-circle"></i> DVD</li>
+                            <li><i class="fas fa-check-circle"></i> Teléfono</li>
+                            <li><i class="fas fa-check-circle"></i> Caja de seguridad</li>
+                            <li><i class="fas fa-check-circle"></i> Ventiladores de techo</li>
+                            <li><i class="fas fa-check-circle"></i> Calefacción central por radiadores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}

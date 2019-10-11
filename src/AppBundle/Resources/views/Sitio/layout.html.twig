@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
 		<!-- Global Site Tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106865497-1"></script>
 		<script>
@@ -11,13 +11,13 @@
 		gtag('config', 'UA-106865497-1');
 		</script>
 
-		<meta charset="utf-8"> 
+		 
         <title>Arawi Aparts - Las Gaviotas, Mar de las Pampas alquiler departamentos con servicios</title>         
         <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
         <meta name="keywords" content="alquiler, apart, departamentos, las gaviotas, mar de las pampas, playa, vacaciones" />
         <meta name="description" content="Aparts con servicios, piscina, solarium, amplio parque, mucama, ropa blanca, WI-FI. A 400m del mar" />
-        <meta name="author" content="www.lasgaviotas.travel" />
-        <meta name="p:domain_verify" content="1b151e6f61da7d3ea696bd5faedf6856"/> 
+        <meta name="author" content="www.lasgaviotas.travel" /> 
+        <meta name="p:domain_verify" content="1b151e6f61da7d3ea696bd5faedf6856"/>
 
 		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 		<link rel="shortcut icon" href="{{ asset('bundles/app/maquetado/img/favicon.ico') }}" type="image/x-icon" />
@@ -42,7 +42,8 @@
 		<meta name="google-site-verification" content="QjTDQYagcRwB5iiHEeTMRpo8LwPGQQFG7nmj0Kep4dM" />
 
 		<!-- Google Fonts -->         
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/39f2458975.js"></script>
         
         <!-- Bootstrap CSS File -->         
         <link href="{{ asset('bundles/app/maquetado/lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"> 
@@ -57,53 +58,55 @@
 
         <!-- Main Stylesheet File -->         
         <link href="{{ asset('bundles/app/maquetado/css/styles.css') }}" rel="stylesheet">	
-
-        
 	</head>
 
 <body>
-	<section id ="inicio">
-        <div id="top-menu" class="container d-none d-md-block">
-            <div class="row">
-                <div class="col-sm-8">
-                    <i class="telefono-top fas fa-phone"></i> Reservas: 11 5414-0776
-                </div>
-                <div class="redes-sociales col-sm-4 text-right">
-                    <i class="fab fa-facebook-square fa-lg"></i>
-                    <i class="fab fa-tripadvisor fa-lg"></i>
-                </div>
-            </div>
-        </div>     
-    </section>
 
     <header id="header"{% if interna is defined and interna == true %} class="interna" {% endif %}> 
         <!-- <div class="container-fluid"> --> 
-        <div class="container sticky-top">
+        <div class="container">
             <div id="logo" class="pull-left">                   
                  <h1><a href="#inicio"><img src="{{ asset('bundles/app/maquetado/img/logo.png') }}" alt="Arawi Apart - Las Gaviotas, Mar de las Pampas" title="" /></a></h1>
-            </div>                 
-            <nav id="nav-menu-container"> 
-                <ul class="nav-menu"> 
-                    <li class="menu-active">
-                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#inicio"{% else %} href="{{ path('homepage') }}#inicio"{% endif %}>Inicio</a>
-                    </li>                         
-                    <li>
-                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#promociones"{% else %} href="{{ path('homepage') }}#promociones"{% endif %}>Promociones</a>
-                    </li>   
-                    <li>
-                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#aparts"{% else %} href="{{ path('homepage') }}#aparts"{% endif %}>Los Aparts</a>
-                    </li>                      
-                    <li>
-                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#servicios"{% else %} href="{{ path('homepage') }}#servicios"{% endif %}>Servicios</a>
-                    </li>
-                    <li>
-                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#ubicacion"{% else %} href="{{ path('homepage') }}#ubicacion"{% endif %}>Ubicación</a>
-                    </li>                        
-                    <li>
-                        <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#contact"{% else %} href="{{ path('homepage') }}#contact"{% endif %}>Contacto</a>
-                    </li>                         
-                </ul>                     
-            </nav>
+            </div>
+            <div class="nav-wrapper">
+                <span class="ws-phone">
+			        <a href=""><i class="fab fa-whatsapp"></i> (011) 5414.0776</a>
+			    </span>
+			    <span class="ws-phone --green">
+			        <a href="https://wa.me/5491154140776"><i class="fab fa-whatsapp"></i> Chatea por Whatsapp</a>
+			    </span>
+                <nav id="nav-menu-container"> 
+                    <ul class="nav-menu"> 
+                        <li class="menu-active">
+                            <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#inicio"{% else %} href="{{ path('homepage') }}#inicio"{% endif %}>Inicio</a>
+                        </li>                         
+                        <li>
+                            <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#promociones"{% else %} href="{{ path('homepage') }}#promociones"{% endif %}>Promociones</a>
+                        </li>   
+                        <li>
+                            <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#aparts"{% else %} href="{{ path('homepage') }}#aparts"{% endif %}>Los Aparts</a>
+                        </li>                      
+                        <li>
+                            <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#servicios"{% else %} href="{{ path('homepage') }}#servicios"{% endif %}>Servicios</a>
+                        </li>
+                        <li>
+                            <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#ubicacion"{% else %} href="{{ path('homepage') }}#ubicacion"{% endif %}>Ubicación</a>
+                        </li>                        
+                        <li>
+                            <a {% if app.request.attributes.get('_route') == 'homepage' %} href="#contact"{% else %} href="{{ path('homepage') }}#contact"{% endif %}>Contacto</a>
+                        </li>                         
+                    </ul>                     
+                </nav>
+            </div>
+            <div class="contact-wrapper">
+				<ul class="social-nav">
+					<li><a><i class="fab fa-facebook-f"></i></a></li>
+					<li><a><i class="fab fa-twitter"></i></a></li>
+				</ul>
+				<div class="contact-info">
+					<a href="mailto:info@arawiapart.com.ar?Subject=Consulta%20Caba&ntilde;as%20Ciromarino" target="_top">info@arawiapart.com.ar</a>
+				</div>
+			</div>
             <!-- #nav-menu-container -->                 
         </div>             
     </header>
@@ -279,7 +282,5 @@ Footer
         // Initialize maps
         google.maps.event.addDomListener(window, 'load', regular_map);
     </script>
-
-    
 </body>
 </html>

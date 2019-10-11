@@ -69,6 +69,15 @@ class DefaultController extends Controller
     {
     	return array();
     }
+
+    /**
+     * @Route("/apart-premium-4-personas", name="apart-premium-4-personas")
+     * @Template("AppBundle:Sitio:apart-premium-4-personas.html.twig")
+     */
+    public function apartPremium4PersonasAction(Request $request)
+    {
+        return array();
+    }
     
     /**
      * @Route("/apart-6-personas", name="apart-6-personas")

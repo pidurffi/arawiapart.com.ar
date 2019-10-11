@@ -115,5 +115,3 @@ comur_image:
         web_dirname: 'public_html'
         translation_domain: 'ComurImageBundle'
         gallery_thumb_size: 150
-
-        
